@@ -101,4 +101,27 @@ body {
     display: block;
   }
 }
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  background-color: transparent;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  grid-auto-flow: dense;
+  width: 70%;
+  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.gallery .box {
+  width: 1fr;
+  height: 250px;
+  background-color: blue;
+  border: 10px solid black;
+}
 /*# sourceMappingURL=style.css.map */

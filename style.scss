@@ -81,3 +81,22 @@ body {
         display: block;
     }
 }
+
+.gallery {
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 16px;
+    padding: 16px;
+    grid-auto-flow: dense;
+    width: 70%;
+    margin: auto;
+    justify-content: space-evenly;
+    
+    .box {
+        width: 1fr;
+        height: 250px;
+        background-color: blue;
+        border: 10px solid black;
+    }
+}
